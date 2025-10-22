@@ -1,0 +1,26 @@
+/* src/datatables.css */
+.dataTables_filter input {
+  @apply bg-[#1b1c1f] border border-white text-white px-3 py-1 rounded-md outline-none;
+}
+
+.dataTables_length select {
+  @apply bg-[#1b1c1f] border border-white text-white rounded-md px-2 py-1;
+}
+
+.dataTables_filter label,
+.dataTables_length label {
+  @apply text-white;
+}
+
+.dataTables_info,
+.dataTables_paginate {
+  @apply text-white;
+}
+
+.dataTables_paginate .paginate_button {
+  @apply bg-[#1b1c1f] border border-gray-600 text-white rounded px-2 py-1 mx-1 transition;
+}
+
+.dataTables_paginate .paginate_button.current {
+  @apply bg-blue-600 border-blue-600 text-white;
+}

@@ -1,0 +1,147 @@
+# ============================================================
+# SinemaKita - URL Rewriting
+# ============================================================
+
+RewriteEngine On
+RewriteBase /sinemakita/
+
+# ============================================================
+# ========== REDIRECT URL JELEK KE CANTIK =====================
+# ============================================================
+
+# --- Admin Dashboard ---
+RewriteCond %{THE_REQUEST} \s/index\.php [NC]
+RewriteCond %{QUERY_STRING} (^|&)pege=admin(&|$) [NC]
+RewriteRule ^index\.php$ admin? [L,R=301]
+
+# --- Admin menu (?pege=admin&menu=pengguna) ---
+RewriteCond %{THE_REQUEST} \s/index\.php [NC]
+RewriteCond %{QUERY_STRING} (^|&)pege=admin(&|$) [NC]
+RewriteCond %{QUERY_STRING} (^|&)menu=([^&]+) [NC]
+RewriteRule ^index\.php$ admin/%2? [L,R=301]
+
+# --- Admin menu + action ---
+RewriteCond %{THE_REQUEST} \s/index\.php [NC]
+RewriteCond %{QUERY_STRING} (^|&)pege=admin(&|$) [NC]
+RewriteCond %{QUERY_STRING} (^|&)menu=([^&]+)(&|$) [NC]
+RewriteCond %{QUERY_STRING} (^|&)action=([^&]+)(&|$) [NC]
+RewriteRule ^index\.php$ admin/%2/%3? [L,R=301]
+
+# --- Admin menu + action + id ---
+RewriteCond %{THE_REQUEST} \s/index\.php [NC]
+RewriteCond %{QUERY_STRING} (^|&)pege=admin(&|$) [NC]
+RewriteCond %{QUERY_STRING} (^|&)menu=([^&]+)(&|$) [NC]
+RewriteCond %{QUERY_STRING} (^|&)action=(edit|detail)(&|$) [NC]
+RewriteCond %{QUERY_STRING} (^|&)id=([0-9]+) [NC]
+RewriteRule ^index\.php$ admin/%2/%3/%4? [L,R=301]
+
+# --- Admin episode detail ---
+RewriteCond %{THE_REQUEST} \s/index\.php [NC]
+RewriteCond %{QUERY_STRING} (^|&)pege=admin(&|$) [NC]
+RewriteCond %{QUERY_STRING} (^|&)menu=episode(&|$) [NC]
+RewriteCond %{QUERY_STRING} (^|&)action=detail(&|$) [NC]
+RewriteCond %{QUERY_STRING} (^|&)episode=([^&]+) [NC]
+RewriteRule ^index\.php$ admin/episode/detail/%1? [L,R=301]
+
+# --- Login, Register, Akun, Verifikasi, Kirim Verifikasi ---
+RewriteCond %{THE_REQUEST} \s/index\.php [NC]
+RewriteCond %{QUERY_STRING} (^|&)pege=(login|register|akun|verifikasi|kirim_verifikasi)(&|$) [NC]
+RewriteRule ^index\.php$ %1? [L,R=301]
+
+# --- Akun Setting ---
+RewriteCond %{THE_REQUEST} \s/index\.php [NC]
+RewriteCond %{QUERY_STRING} (^|&)pege=akun_setting(&|$) [NC]
+RewriteRule ^index\.php$ akun/setting? [L,R=301]
+
+# --- Movie detail tanpa episode ---
+RewriteCond %{THE_REQUEST} \s/index\.php [NC]
+RewriteCond %{QUERY_STRING} (^|&)pege=movie(&|$) [NC]
+RewriteCond %{QUERY_STRING} (^|&)slug=([^&]+) [NC]
+RewriteCond %{QUERY_STRING} !(^|&)episode= [NC]
+RewriteRule ^index\.php$ movie/%2? [L,R=301]
+
+# --- Movie + episode ---
+RewriteCond %{THE_REQUEST} \s/index\.php [NC]
+RewriteCond %{QUERY_STRING} (^|&)pege=movie(&|$) [NC]
+RewriteCond %{QUERY_STRING} (^|&)slug=([^&]+) [NC]
+RewriteCond %{QUERY_STRING} (^|&)episode=([^&]+) [NC]
+RewriteRule ^index\.php$ movie/%2/%3? [L,R=301]
+
+# --- Logout ---
+RewriteCond %{THE_REQUEST} \s/src/auth/logout_action\.php [NC]
+RewriteRule ^src/auth/logout_action\.php$ logout? [L,R=301]
+
+# --- Tag page ---
+RewriteCond %{THE_REQUEST} \s/index\.php [NC]
+RewriteCond %{QUERY_STRING} (^|&)pege=tag(&|$) [NC]
+RewriteCond %{QUERY_STRING} (^|&)tag=([^&]+) [NC]
+RewriteRule ^index\.php$ tag/%2? [L,R=301]
+
+# Tag page tanpa parameter
+RewriteCond %{THE_REQUEST} \s/index\.php [NC]
+RewriteCond %{QUERY_STRING} (^|&)pege=tag(&|$) [NC]
+RewriteCond %{QUERY_STRING} !(^|&)tag= [NC]
+RewriteRule ^index\.php$ tag? [L,R=301]
+
+# --- Lupa Password ---
+RewriteCond %{THE_REQUEST} \s/index\.php [NC]
+RewriteCond %{QUERY_STRING} (^|&)pege=lupa_password(&|$) [NC]
+RewriteRule ^index\.php$ lupa-password? [L,R=301]
+
+# --- Reset Password ---
+RewriteCond %{THE_REQUEST} \s/index\.php [NC]
+RewriteCond %{QUERY_STRING} (^|&)pege=reset_password(&|$) [NC]
+RewriteRule ^index\.php$ reset-password? [L,R=301]
+
+
+# ============================================================
+# ========== URL CANTIK KE index.php ==========================
+# ============================================================
+
+# --- Admin dashboard ---
+RewriteRule ^admin$ index.php?pege=admin [L,QSA]
+
+# --- Admin menu ---
+RewriteRule ^admin/(pengguna|tag|film|review|episode|banner)$ index.php?pege=admin&menu=$1 [L,QSA]
+
+# --- Admin menu + action ---
+RewriteRule ^admin/(pengguna|tag|film|review|episode|banner)/(tambah|edit|detail)$ index.php?pege=admin&menu=$1&action=$2 [L,QSA]
+
+# --- Admin menu + action + id ---
+RewriteRule ^admin/(pengguna|tag|film|review|episode|banner)/(edit|detail)/([0-9]+)$ index.php?pege=admin&menu=$1&action=$2&id=$3 [L,QSA]
+
+# --- Admin episode detail ---
+RewriteRule ^admin/episode/detail/(detail|tambah|edit)$ index.php?pege=admin&menu=episode&action=detail&episode=$1 [L,QSA]
+RewriteRule ^admin/episode/detail/(detail|tambah|edit)/([0-9]+)$ index.php?pege=admin&menu=episode&action=detail&episode=$1&id=$2 [L,QSA]
+
+# --- Login, Register, Akun, Verifikasi, Kirim Verifikasi ---
+RewriteRule ^login$ index.php?pege=login [L,QSA]
+RewriteRule ^register$ index.php?pege=register [L,QSA]
+RewriteRule ^akun$ index.php?pege=akun [L,QSA]
+RewriteRule ^verifikasi$ index.php?pege=verifikasi [L,QSA]
+RewriteRule ^kirim-verifikasi$ index.php?pege=kirim_verifikasi [L,QSA]
+
+# --- Akun Setting ---
+RewriteRule ^akun/setting$ index.php?pege=akun_setting [L,QSA]
+
+# --- Logout ---
+RewriteRule ^logout$ src/auth/logout_action.php [L,QSA]
+
+# --- Beranda ---
+RewriteRule ^beranda$ index.php?pege=beranda [L,QSA]
+
+# --- Movie detail tanpa episode ---
+RewriteRule ^movie/([^/]+)/?$ index.php?pege=movie&slug=$1 [L,QSA]
+
+# --- Movie + episode ---
+RewriteRule ^movie/([^/]+)/([^/]+)/?$ index.php?pege=movie&slug=$1&episode=$2 [L,QSA]
+
+# --- Tag page ---
+RewriteRule ^tag/([^/]+)/?$ index.php?pege=tag&tag=$1 [L,QSA]
+RewriteRule ^tag/?$ index.php?pege=tag [L,QSA]
+
+# --- Lupa Password ---
+RewriteRule ^lupa-password$ index.php?pege=lupa_password [L,QSA]
+
+# --- Reset Password ---
+RewriteRule ^reset-password$ index.php?pege=reset_password [L,QSA]
