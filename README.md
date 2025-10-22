@@ -32,7 +32,9 @@
 
 **SinemaKita** adalah platform streaming film sederhana yang dikembangkan untuk memberikan pengalaman menonton yang mudah, cepat, dan interaktif.  
 Aplikasi ini memiliki sistem login multiuser (Admin dan Pengguna) serta dukungan autentikasi Google dan verifikasi akun melalui email.
-=======
+
+---
+
 **SinemaKita** adalah platform streaming film modern yang dirancang untuk memberikan pengalaman menonton yang mudah, cepat, dan interaktif.  
 Aplikasi ini dilengkapi dengan sistem **login multiuser (Admin & Pengguna)**, **autentikasi Google OAuth**, serta **verifikasi akun melalui email Gmail SMTP**.
 
@@ -40,14 +42,6 @@ Aplikasi ini dilengkapi dengan sistem **login multiuser (Admin & Pengguna)**, **
 
 ## 📦 Fitur Utama
 
-
-- 🔐 **Login Multiuser:** Pengguna dan Admin dengan autentikasi Google, verifikasi akun, dan reset password.
-- 🎞️ **Streaming Film:** Tonton film langsung melalui tampilan antarmuka yang elegan.
-- 🗂️ **Manajemen Film (Admin):** Tambah, ubah, hapus, dan kelola daftar film dengan mudah.
-- 💬 **Ulasan Film:** Pengguna dapat memberikan rating dan komentar.
-- 🔍 **Pencarian Cepat:** Temukan film favoritmu dengan fitur pencarian real-time.
-- 📧 **Email Notification:** Kirim verifikasi dan reset password via Gmail SMTP.
-=======
 - 🔐 **Login Multiuser:** Sistem login terpisah untuk *Admin* dan *Pengguna* (dengan dukungan Google OAuth).
 - 🎞️ **Streaming Film:** Tonton film langsung melalui tampilan antarmuka yang elegan dan modern.
 - 🗂️ **Manajemen Film (Admin):** Tambah, ubah, hapus, dan kelola daftar film dengan mudah.
@@ -70,8 +64,6 @@ Aplikasi ini dilengkapi dengan sistem **login multiuser (Admin & Pengguna)**, **
 | 🟢 **Node.js & npm** | Node 18+ / npm 9+ | Untuk dependensi frontend |
 | 🗄️ **MySQL** | 5.7+ | Basis data utama |
 | 🔧 **Git** | Terpasang di sistem | Untuk clone & version control |
-=======
-| 🔧 **Git** | Terinstal di sistem | Untuk clone & version control |
 
 ---
 
@@ -112,21 +104,6 @@ npm install
 
 ```bash
 cp .env.example .env
-
-APP_NAME="SinemaKita"
-APP_ENV=local
-APP_URL="http://localhost/SinemaKita"
-
-DB_HOST=localhost
-DB_PORT=3306
-DB_DATABASE=sinemakita
-DB_USERNAME=root
-DB_PASSWORD=
-
-MAIL_HOST="smtp.gmail.com"
-MAIL_PORT=465
-MAIL_USERNAME="youremail@gmail.com"
-MAIL_PASSWORD="app_password_gmail"
 ```
 
 ### 6 Jalankan Aplikasi (PHP Built In Server)
@@ -152,9 +129,8 @@ npm run dev
 ## 🧠 Tips Tambahan
 
 * ✅ Gunakan **Laragon** agar lebih mudah mengelola PHP, MySQL, dan Node.js.
-* 🔐 Pastikan file `.env` berada di folder `utils/` dan dapat di-load oleh `phpdotenv`.
+* 🔐 Pastikan file `.env` berada di root folder.
 * 🔄 Jalankan `npm run build` setiap kali melakukan perubahan besar di frontend.
-* 📬 Aktifkan **App Password Gmail** untuk pengiriman email melalui SMTP.
 
 ---
 
@@ -233,4 +209,4 @@ Dukunganmu membantu proyek ini terus berkembang ❤️
 
 ---
 
-**Dibuat dengan ❤️ oleh [Farendra August](https://github.com/FarendraAugust)**
+**Dibuat dengan ❤️ oleh [Farendra August](https://github.com/FarendraAugust) & [Esa Farellio](https://github.com/EsaFrllio)**
