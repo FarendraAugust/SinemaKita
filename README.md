@@ -1,8 +1,6 @@
-<<<<<<< HEAD
 <h1 align="center">🎬 SinemaKita</h1>
 =======
 # SinemaKita<h1 align="center">🎬 SinemaKita</h1>
->>>>>>> d6939b0 (Readme)
 
 <p align="center">
   <i>Platform streaming film modern berbasis PHP & MySQL dengan integrasi Google OAuth dan sistem notifikasi email.</i><br>
@@ -22,7 +20,6 @@
   <a href="#">
     <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square">
   </a>
-<<<<<<< HEAD
 =======
   <a href="#">
     <img src="https://img.shields.io/badge/Build-Passing-brightgreen?style=flat-square&logo=githubactions&logoColor=white">
@@ -30,26 +27,23 @@
   <a href="#">
     <img src="https://img.shields.io/badge/Made%20with-PHP%20%26%20TailwindCSS-blue?style=flat-square">
   </a>
->>>>>>> d6939b0 (Readme)
 </p>
 
 ---
 
 ## ✨ Tentang SinemaKita
 
-<<<<<<< HEAD
 **SinemaKita** adalah platform streaming film sederhana yang dikembangkan untuk memberikan pengalaman menonton yang mudah, cepat, dan interaktif.  
 Aplikasi ini memiliki sistem login multiuser (Admin dan Pengguna) serta dukungan autentikasi Google dan verifikasi akun melalui email.
 =======
 **SinemaKita** adalah platform streaming film modern yang dirancang untuk memberikan pengalaman menonton yang mudah, cepat, dan interaktif.  
 Aplikasi ini dilengkapi dengan sistem **login multiuser (Admin & Pengguna)**, **autentikasi Google OAuth**, serta **verifikasi akun melalui email Gmail SMTP**.
->>>>>>> d6939b0 (Readme)
 
 ---
 
 ## 📦 Fitur Utama
 
-<<<<<<< HEAD
+
 - 🔐 **Login Multiuser:** Pengguna dan Admin dengan autentikasi Google, verifikasi akun, dan reset password.
 - 🎞️ **Streaming Film:** Tonton film langsung melalui tampilan antarmuka yang elegan.
 - 🗂️ **Manajemen Film (Admin):** Tambah, ubah, hapus, dan kelola daftar film dengan mudah.
@@ -63,35 +57,30 @@ Aplikasi ini dilengkapi dengan sistem **login multiuser (Admin & Pengguna)**, **
 - 💬 **Ulasan & Rating:** Pengguna dapat memberikan komentar dan penilaian terhadap film.
 - 🔍 **Pencarian Real-Time:** Temukan film favoritmu secara instan.
 - 📧 **Email Notification:** Kirim email verifikasi dan reset password melalui Gmail SMTP.
->>>>>>> d6939b0 (Readme)
 - ⚙️ **Konfigurasi Mudah:** Semua pengaturan disimpan dalam file `.env`.
 
 ---
 
 ## 🧩 Persyaratan Sistem
 
-<<<<<<< HEAD
 > Pastikan perangkatmu telah memiliki software berikut sebelum memulai instalasi 👇
 
 =======
->>>>>>> d6939b0 (Readme)
 | 🧰 Komponen | 💡 Versi Disarankan | 🔗 Keterangan |
 |--------------|--------------------|---------------|
 | 🐘 **PHP** | ≥ 8.1 | Backend utama proyek |
 | 🎼 **Composer** | 2.x | Manajer dependensi PHP |
 | 🟢 **Node.js & npm** | Node 18+ / npm 9+ | Untuk dependensi frontend |
 | 🗄️ **MySQL** | 5.7+ | Basis data utama |
-<<<<<<< HEAD
 | 🔧 **Git** | Terpasang di sistem | Untuk clone & version control |
 =======
 | 🔧 **Git** | Terinstal di sistem | Untuk clone & version control |
->>>>>>> d6939b0 (Readme)
 
 ---
 
 ## 🚀 Instalasi Lengkap (Copy-Paste Friendly)
 
-<<<<<<< HEAD
+
 Berikut tutorial lengkap agar pengguna lain bisa langsung menjalankan **SinemaKita** di komputer mereka 👇  
 
 ---
@@ -144,13 +133,11 @@ npm install
 ```
 
 ### 4️⃣ Konfigurasi File `.env`
->>>>>>> d6939b0 (Readme)
 
 ```bash
 cp .env.example .env
 ```
 
-<<<<<<< HEAD
 ### 5 Buat Database
 
 ```bash
@@ -189,7 +176,6 @@ CREATE DATABASE sinemakita;
 php -S localhost:8000
 ```
 
-<<<<<<< HEAD
 ### 7 Jalankan Frondted
 
 ```bash
@@ -289,4 +275,3 @@ Dukunganmu membantu proyek ini terus berkembang ❤️
 ---
 
 **Dibuat dengan ❤️ oleh [Farendra August](https://github.com/FarendraAugust)**
->>>>>>> d6939b0 (Readme)
