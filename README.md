@@ -1,6 +1,4 @@
 <h1 align="center">🎬 SinemaKita</h1>
-=======
-<h1 align="center">🎬 SinemaKita</h1>
 
 <p align="center">
   <i>Platform streaming film modern berbasis PHP & MySQL dengan integrasi Google OAuth dan sistem notifikasi email.</i><br>
@@ -97,56 +95,25 @@ cd SinemaKita
 ### 2 Instal Dependensi PHP (Backend)
 
 ```bash
-Pastikan sudah menginstal Composer terlebih dahulu.
-Unduh di: https://getcomposer.org/download/
+# Pastikan sudah menginstal Composer terlebih dahulu.
+# Unduh di: https://getcomposer.org/download/
 
 composer install
 ```
 ### 3 Instal Dependensi Frontend (npm)
 
 ```bash
-Pastikan Node.js dan npm sudah terpasang.
-Unduh di: https://nodejs.org/
+# Pastikan Node.js dan npm sudah terpasang.
+# Unduh di: https://nodejs.org/
 
 npm install
 ```
 
 ### 4 Konfigurasi File .env
-=======
-### 1️⃣ Clone Repository
-
-```bash
-git clone https://github.com/FarendraAugust/SinemaKita.git
-cd SinemaKita
-```
-
-### 2️⃣ Instal Dependensi PHP
-
-```bash
-composer install
-```
-
-### 3️⃣ Instal Dependensi Frontend
-
-```bash
-npm install
-```
-
-### 4️⃣ Konfigurasi File `.env`
 
 ```bash
 cp .env.example .env
-```
 
-### 5 Buat Database
-
-```bash
-CREATE DATABASE sinemakita;
-```
-
-### 6 Jalankan Aplikasi (PHP Built In Server)
-=======
-```
 APP_NAME="SinemaKita"
 APP_ENV=local
 APP_URL="http://localhost/SinemaKita"
@@ -163,14 +130,7 @@ MAIL_USERNAME="youremail@gmail.com"
 MAIL_PASSWORD="app_password_gmail"
 ```
 
-### 5️⃣ Buat Database
-
-```sql
-CREATE DATABASE sinemakita;
-```
-
-### 6️⃣ Jalankan Aplikasi
->>>>>>> d6939b0 (Readme)
+### 6 Jalankan Aplikasi (PHP Built In Server)
 
 ```bash
 php -S localhost:8000
