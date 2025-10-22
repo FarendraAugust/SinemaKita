@@ -1,6 +1,6 @@
 <h1 align="center">🎬 SinemaKita</h1>
 =======
-# SinemaKita<h1 align="center">🎬 SinemaKita</h1>
+<h1 align="center">🎬 SinemaKita</h1>
 
 <p align="center">
   <i>Platform streaming film modern berbasis PHP & MySQL dengan integrasi Google OAuth dan sistem notifikasi email.</i><br>
