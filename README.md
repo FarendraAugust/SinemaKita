@@ -61,7 +61,7 @@ Berikut tutorial lengkap agar pengguna lain bisa langsung menjalankan **SinemaKi
 
 ---
 
-### 1️⃣ Clone Repository
+### 1 Clone Repository
 
 ```bash
 # Clone repository dari GitHub
@@ -69,3 +69,44 @@ git clone https://github.com/FarendraAugust/SinemaKita.git
 
 # Masuk ke folder project
 cd SinemaKita
+```
+### 2 Instal Dependensi PHP (Backend)
+
+```bash
+Pastikan sudah menginstal Composer terlebih dahulu.
+Unduh di: https://getcomposer.org/download/
+
+composer install
+```
+### 3 Instal Dependensi Frontend (npm)
+
+```bash
+Pastikan Node.js dan npm sudah terpasang.
+Unduh di: https://nodejs.org/
+
+npm install
+```
+
+### 4 Konfigurasi File .env
+
+```bash
+cp .env.example .env
+```
+
+### 5 Buat Database
+
+```bash
+CREATE DATABASE sinemakita;
+```
+
+### 6 Jalankan Aplikasi (PHP Built In Server)
+
+```bash
+php -S localhost:8000
+```
+
+### 7 Jalankan Frondted
+
+```bash
+npm run dev
+npm run build
