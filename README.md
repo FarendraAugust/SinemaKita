@@ -18,7 +18,6 @@
   <a href="#">
     <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square">
   </a>
-=======
   <a href="#">
     <img src="https://img.shields.io/badge/Build-Passing-brightgreen?style=flat-square&logo=githubactions&logoColor=white">
   </a>
