@@ -117,8 +117,6 @@ php -S localhost:8000
 ```bash
 npm run dev
 npm run build
-=======
-### 7️⃣ Jalankan Frontend
 
 ```bash
 npm run dev
