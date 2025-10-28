@@ -72,6 +72,8 @@ if ($pege === 'movie' && !empty($slug)) {
     $title = implode(' - ', $parts);
 }
 
+$APP_URL = $_ENV['APP_URL'];
+
 ?>
 
 
@@ -82,7 +84,7 @@ if ($pege === 'movie' && !empty($slug)) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= htmlspecialchars($title) ?></title>
 
-    <link href="/sinemakita/src/output.css" rel="stylesheet">
+    <link href="<?= $APP_URL ?>/src/output.css" rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>

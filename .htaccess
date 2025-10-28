@@ -3,7 +3,7 @@
 # ============================================================
 
 RewriteEngine On
-RewriteBase /sinemakita/
+RewriteBase /sinemakita
 
 # ============================================================
 # ========== REDIRECT URL JELEK KE CANTIK =====================
