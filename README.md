@@ -169,7 +169,7 @@ SinemaKita/
 ## 📸 Preview UI
 
 <p align="center">
-  <img src="assets/preview/homepage.png" alt="Preview Home" width="80%">
+  <img src="img/preview-1.png" alt="Preview Home" width="80%">
   <br>
   <em>Tampilan beranda SinemaKita</em>
 </p>
