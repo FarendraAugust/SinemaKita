@@ -157,9 +157,11 @@ php -S localhost:8000
 
 ### 7 Jalankan Frondted
 
-````bash
+```bash
 npm run dev
 npm run build
+
+```
 
 ---
 
