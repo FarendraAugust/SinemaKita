@@ -42,7 +42,7 @@ Aplikasi ini dilengkapi dengan sistem **login multiuser (Admin & Pengguna)**, **
 
 ## 📦 Fitur Utama
 
-- 🔐 **Login Multiuser:** Sistem login terpisah untuk *Admin* dan *Pengguna* (dengan dukungan Google OAuth).
+- 🔐 **Login Multiuser:** Sistem login terpisah untuk _Admin_ dan _Pengguna_ (dengan dukungan Google OAuth).
 - 🎞️ **Streaming Film:** Tonton film langsung melalui tampilan antarmuka yang elegan dan modern.
 - 🗂️ **Manajemen Film (Admin):** Tambah, ubah, hapus, dan kelola daftar film dengan mudah.
 - 💬 **Ulasan & Rating:** Pengguna dapat memberikan komentar dan penilaian terhadap film.
@@ -69,8 +69,7 @@ Aplikasi ini dilengkapi dengan sistem **login multiuser (Admin & Pengguna)**, **
 
 ## 🚀 Instalasi Lengkap (Copy-Paste Friendly)
 
-
-Berikut tutorial lengkap agar pengguna lain bisa langsung menjalankan **SinemaKita** di komputer mereka 👇  
+Berikut tutorial lengkap agar pengguna lain bisa langsung menjalankan **SinemaKita** di komputer mereka 👇
 
 ---
 
@@ -83,6 +82,7 @@ git clone https://github.com/FarendraAugust/SinemaKita.git
 # Masuk ke folder project
 cd SinemaKita
 ```
+
 ### 2 Instal Dependensi PHP (Backend)
 
 ```bash
@@ -91,6 +91,7 @@ cd SinemaKita
 
 composer install
 ```
+
 ### 3 Instal Dependensi Frontend (npm)
 
 ```bash
@@ -104,6 +105,48 @@ npm install
 
 ```bash
 cp .env.example .env
+
+# Lalu buka file .env dan sesuaikan routes app dan bagian database
+
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=sinemakita
+DB_USERNAME=root
+DB_PASSWORD=
+
+```
+
+### 5 Import Database
+
+```bash
+# Jika Menggunakan Laragon, XAMPP dan sejenisnya buka control panel lalu jalankan
+
+Start → Apache
+Start → MySQL
+
+# Buat database baru bernama sinemakita atau bebas
+
+CREATE DATABASE sinemakita;
+
+# Import file database sinemakita.sql ke dalam database tersebut
+
+Cara 1 (phpMyAdmin):
+
+ - Buka: http://localhost/phpmyadmin
+
+ - Pilih database sinemakita
+
+ - Klik tab Import
+
+ - Pilih file sinemakita.sql
+
+ - Klik Go
+
+ Cara 2 (Commanf Line)
+
+ - mysql -u root -p sinemakita < sinemakita.sql
+
+
 ```
 
 ### 6 Jalankan Aplikasi (PHP Built In Server)
@@ -118,10 +161,6 @@ php -S localhost:8000
 npm run dev
 npm run build
 
-```bash
-npm run dev
-```
-
 ---
 
 ## 🧠 Tips Tambahan
@@ -135,11 +174,12 @@ npm run dev
 ## 🗂️ Struktur Folder
 
 ```
+
 SinemaKita/
 ├── assets/
 ├── src/
-│   ├── components/
-│   └── pages/
+│ ├── components/
+│ └── pages/
 ├── admin/
 ├── auth/
 ├── utils/
@@ -148,6 +188,7 @@ SinemaKita/
 ├── composer.json
 ├── .env.example
 └── index.php
+
 ```
 
 ---
@@ -208,3 +249,4 @@ Dukunganmu membantu proyek ini terus berkembang ❤️
 ---
 
 **Dibuat dengan ❤️ oleh [Farendra August](https://github.com/FarendraAugust) & [Esa Farellio](https://github.com/EsaFrllio)**
+```
