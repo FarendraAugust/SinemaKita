@@ -69,7 +69,7 @@ Aplikasi ini dilengkapi dengan sistem **login multiuser (Admin & Pengguna)**, **
 
 ## 🚀 Instalasi Lengkap (Copy-Paste Friendly)
 
-Berikut tutorial lengkap agar pengguna lain bisa langsung menjalankan **SinemaKita** di komputer mereka 👇
+Ini adalah cara untuk menjalankan SinemaKita di komputer anda
 
 ---
 
