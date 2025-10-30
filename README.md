@@ -152,7 +152,7 @@ Cara 1 (phpMyAdmin):
 ### 6 Jalankan Aplikasi (PHP Built In Server)
 
 ```bash
-php -S localhost:8000
+php -S localhost:8000 router.php
 ```
 
 ### 7 Jalankan Frondted
