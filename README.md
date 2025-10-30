@@ -157,7 +157,7 @@ php -S localhost:8000
 
 ### 7 Jalankan Frondted
 
-```bash
+````bash
 npm run dev
 npm run build
 
@@ -165,7 +165,7 @@ npm run build
 
 ## 🧠 Tips Tambahan
 
-* ✅ Gunakan **Laragon** agar lebih mudah mengelola PHP, MySQL, dan Node.js.
+* ✅ Gunakan **Laragon / XAMPP** agar lebih mudah mengelola PHP, MySQL, dan Node.js.
 * 🔐 Pastikan file `.env` berada di root folder.
 * 🔄 Jalankan `npm run build` setiap kali melakukan perubahan besar di frontend.
 
@@ -173,7 +173,7 @@ npm run build
 
 ## 🗂️ Struktur Folder
 
-```
+```bash
 
 SinemaKita/
 ├── assets/
@@ -189,7 +189,7 @@ SinemaKita/
 ├── .env.example
 └── index.php
 
-```
+````
 
 ---
 
@@ -232,11 +232,11 @@ Proyek ini dirilis di bawah lisensi **MIT** — silakan gunakan, modifikasi, dan
 Kontribusi terbuka untuk siapa pun!
 Kamu bisa membantu dengan cara:
 
-* Menemukan dan memperbaiki bug 🐞
-* Menambahkan fitur baru 🚀
-* Meningkatkan dokumentasi 📖
+- Menemukan dan memperbaiki bug 🐞
+- Menambahkan fitur baru 🚀
+- Meningkatkan dokumentasi 📖
 
-Silakan ajukan *pull request* di GitHub:
+Silakan ajukan _pull request_ di GitHub:
 👉 [github.com/FarendraAugust/SinemaKita](https://github.com/FarendraAugust/SinemaKita)
 
 ---
@@ -249,4 +249,7 @@ Dukunganmu membantu proyek ini terus berkembang ❤️
 ---
 
 **Dibuat dengan ❤️ oleh [Farendra August](https://github.com/FarendraAugust) & [Esa Farellio](https://github.com/EsaFrllio)**
+
+```
+
 ```
