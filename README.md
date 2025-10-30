@@ -231,7 +231,3 @@ Dukunganmu membantu proyek ini terus berkembang ❤️
 ---
 
 **Dibuat dengan ❤️ oleh [Farendra August](https://github.com/FarendraAugust) & [Esa Farellio](https://github.com/EsaFrllio)**
-
-```
-
-```
