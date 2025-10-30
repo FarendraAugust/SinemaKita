@@ -173,26 +173,6 @@ npm run build
 
 ---
 
-## 🗂️ Struktur Folder
-
-```bash
-
-SinemaKita/
-├── assets/
-├── src/
-│ ├── components/
-│ └── pages/
-├── admin/
-├── auth/
-├── utils/
-├── vendor/
-├── package.json
-├── composer.json
-├── .env.example
-└── index.php
-
-````
-
 ---
 
 ## ⚙️ Teknologi yang Digunakan
@@ -216,7 +196,7 @@ SinemaKita/
 </p>
 
 <p align="center">
-  <img src="assets/preview/admin-dashboard.png" alt="Preview Admin" width="80%">
+  <img src="img/preview-2.png" alt="Preview Admin" width="80%">
   <br>
   <em>Dashboard Admin untuk manajemen film</em>
 </p>
